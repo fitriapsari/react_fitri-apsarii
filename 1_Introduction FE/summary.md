@@ -6,18 +6,19 @@ Front-end developer adalah seorang yang bergerak dalam bidang pengembangan peran
 
 # Tugas Front End
 
--Pembuatan Tampilan Visual
--Implementasi Desain
--Pengembangan Responsif
--Interaksi Pengguna
+- Pembuatan Tampilan Visual
+- Implementasi Desain
+- Pengembangan Responsif
+- Interaksi Pengguna
 
 # Internet
 
 internatioanl network adalah suatu jaringan komputer yang sangat besar, dimana jaringan komputer tersebut terdiri dari beberapa jaringan-jaringan kecil yang saling terhubung satu sama lain.
 Dalam internet terdapat istilah:
-Alamat IP (Internet Protocol Address) adalah serangkaian angka unik yang digunakan untuk mengidentifikasi dan menentukan alamat suatu perangkat dalam jaringan komputer yang menggunakan protokol Internet.
-Domain Name adalah alamat yang lebih mudah diingat yang digunakan untuk mengidentifikasi sumber daya di internet. co/ facebook.com, instagram.com
-ISP (Internet Service Provider) adalah perusahaan atau organisasi yang menyediakan akses internet kepada individu, rumah tangga, dan bisnis. co/ telkomsel, indosat.
+
+- Alamat IP (Internet Protocol Address) adalah serangkaian angka unik yang digunakan untuk mengidentifikasi dan menentukan alamat suatu perangkat dalam jaringan komputer yang menggunakan protokol Internet.
+- Domain Name adalah alamat yang lebih mudah diingat yang digunakan untuk mengidentifikasi sumber daya di internet. co/ facebook.com, instagram.com
+- ISP (Internet Service Provider) adalah perusahaan atau organisasi yang menyediakan akses internet kepada individu, rumah tangga, dan bisnis. co/ telkomsel, indosat.
 
 # Bahasa yang digunakan
 
@@ -35,5 +36,5 @@ penggunaan https
 
 # Package Manager
 
--NPM
--Yarn
+- NPM
+- Yarn
