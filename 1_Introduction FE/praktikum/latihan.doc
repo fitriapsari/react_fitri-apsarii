@@ -1,0 +1,39 @@
+Nama: Fitri Noor Apsari 
+Kelas: React B 
+
+📝 Task
+Soal Prioritas 1 (Nilai 80)
+1. Buat sebuah Google Docs untuk menjawab soal soal dibawah ini
+2. Tuliskan 3 bahasa pemrograman untuk membuat website front end
+ Cari dan tuliskan 5 website front end yang sering kalian gunakan, sertakan juga alamatnya 
+Soal Prioritas 2 (Nilai 20)
+1. Tuliskan 10 hal yang harus dipahami seorang front end developer berdasarkan roadmap.sh ?
+2. Apa version control yang akan kalian pelajari pada course kali ini ?
+3. Sebutkan package manager yang kalian ketahui ? 
+
+JAWAB:
+
+Soal Prioritas 1 
+1. Tiga bahasa pemrograman untuk membuat website front end yaitu, 
+- HTML (HyperText Markup Language): HTML adalah bahasa dasar yang digunakan untuk membuat struktur dan konten halaman web. 
+- CSS (Cascading Style Sheets): CSS digunakan untuk mengatur tampilan dan tata letak elemen-elemen yang didefinisikan dengan HTML. 
+- JavaScript: JavaScript adalah bahasa pemrograman yang digunakan untuk membuat interaksi dan dinamika di dalam halaman web. 
+Ketiga bahasa ini bekerja bersama-sama untuk menciptakan pengalaman pengguna yang lengkap dan interaktif di web. HTML untuk struktur dan konten, CSS untuk tampilan dan tata letak, dan JavaScript untuk interaksi dan dinamika. 
+2. website front end yang sering saya gunakan yaitu, W3schools.com, FreeCodeCamp, roadmap.sh, developer.​mozilla.​org, udemy.​com, codepen.​io. 
+
+Soal Prioritas 2
+1. Sepuluh hal yang harus dipahami seorang front end developer berdasarkan roadmap.sh adalah internet, HTML, CSS (Writing CSS, CSS Architecture), javascript, VCS (Version Control System), hosting, package manager, web security basic, graphQL, SSR (Server Side Rendering). 
+2. Version control yang digunakan dalam course kali ini adalah Git dan Github. 
+3. Package manager adalah perangkat lunak yang digunakan untuk mengelola instalasi, pembaruan, penghapusan, dan manajemen dependensi dari perangkat lunak atau pustaka yang digunakan dalam pengembangan perangkat lunak. Package manager yang saya ketahui yaitu: 
+- npm (Node Package Manager): Ini adalah package manager yang sangat populer untuk pengembangan dengan Node.js. Digunakan terutama untuk mengelola pustaka-pustaka JavaScript dan modul-modul yang digunakan dalam aplikasi Node.js.
+- Yarn: Sejenis npm, Yarn juga digunakan untuk mengelola pustaka-pustaka JavaScript. 
+
+Referensi: 
+https://roadmap.sh/frontend
+https://one.alterra.academy/courses/2023-complete-front-end-engineer-career-with-react-js/lessons/introduction-fe/topic/materi-introduction-fe/ (materi introduction FE alterra academy) 
+https://www.codepolitan.com/blog/mengenal-package-manager-dalam-pemrograman
+
+
+
+
+
