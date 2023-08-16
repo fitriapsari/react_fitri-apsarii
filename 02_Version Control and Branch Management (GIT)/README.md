@@ -1,34 +1,28 @@
-# Versioning
+# Resume Version Control and Branch Management (GIT)
 
-Mengatur versi dari source code program
-
-# Version Control System
-
-Version Control System (VCS) memiliki fungsi untuk mencatat versi atau riwayat perubahan dari source code yang ada. Keberadaan sistem version control berbasis cloud membantu kolaborasi antara banyak orang dalam proyek yang sama. Fleksibilitas menjadi poin penting karena dapat melacak siapa yang melakukan perubahan, apa yang diubah, dan memungkinkan untuk mengembalikan ke versi sebelumnya dari source code.
+- Version Control System (VCS) memiliki fungsi untuk mencatat versi atau riwayat perubahan dari source code yang ada. Keberadaan sistem version control berbasis cloud membantu kolaborasi antara banyak orang dalam proyek yang sama. Fleksibilitas menjadi poin penting karena dapat melacak siapa yang melakukan perubahan, apa yang diubah, dan memungkinkan untuk mengembalikan ke versi sebelumnya dari source code. Selain itu terdapat istilah Versioning yang berguna mengatur versi dari source code program.
 
 ### Single User
 
-- SCCS - 1972 Unix only
-- RCS - 1982 Cross platfrom, text only
+1. SCCS - 1972 Unix only
+2. RCS - 1982 Cross platfrom, text only
 
 ### Centralized
 
-- 1986 focus
-- perforce - 1995
-- Subverssion - 2000 - track directory structure
-- Microsoft team foundation server - 2005
+1. 1986 focus
+2. perforce - 1995
+3. Subverssion - 2000 - track directory structure
+4. Microsoft team foundation server - 2005
 
 ### Distributed
 
-- **Git - 2005** vsc yang paling sering digunakan dibuat oleh Linus Torvald (2005)
-- Mercurial - 2005
-- Bazaar - 2005
+1. **Git - 2005** vsc yang paling sering digunakan dibuat oleh Linus Torvald (2005)
+2. Mercurial - 2005
+3. Bazaar - 2005
 
-# GIT
-
-Vcs populer yang digunakna para developer untuk mengembangkan software secara bersama-sama.
-**Terdistribusi** bukan tersentralisasi.
-Git repository = folder project
+- GIT merupakan VCS populer yang digunakna para developer untuk mengembangkan software secara bersama-sama.
+  **Terdistribusi** bukan tersentralisasi.
+  Git repository = folder project
 
 # Setting Up
 
@@ -106,6 +100,4 @@ Cabang-cabang terpisah dari kode sumber utama dalam repositori yang berguna dala
  git merge developer
 ```
 
-# workflow git hub
-
-Memahami bagaimana alur pada github dengan baik dan benar untuk memudahkan dalam kegiatan proyek.
+- workflow github bertujuan untuk memahami bagaimana alur pada github dengan baik dan benar untuk memudahkan dalam kegiatan proyek.
