@@ -8,7 +8,7 @@
 2. Kolaborator secara real-time
 3. Dapat diimpor ke Sketch
 4. Perpustakaan tim
-5. Prototyping berkualitas tinggi
+5. Prototyping berkualitas tinggi.
    Namun selain memiliki kelebihan figma juga mempunya **kekurangan** yang hanya dapat diakses secara online oleh pengguna.
 
 - Web desain merupakan bagian dari UI/UX yang menggunakan Figma melalui tahapan seperti berikut:
