@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Product</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Create Product</h1>
+      <h2>Detail Product</h2>
+    </header>
+
+    <section class="product-form">
+      <div>
+        <label for="product-name">Product Name :</label><br />
+        <input
+          type="text"
+          id="product-name"
+          name="productname"
+          minlength="6"
+          maxlength="50"
+          required
+        /><br /><br />
+      </div>
+      <div>
+        <label for="product-category">Product Category :</label><br />
+        <select name="product-category" id="product-category" required></select
+        ><br /><br />
+      </div>
+      <div>
+        <label>Product Freshness :</label><br />
+        <input type="radio" id="brand-new" name="product-freshness" /><label
+          for="brand-new"
+          >Brand New</label
+        ><br />
+        <input type="radio" id="second-hand" name="product-freshness" /><label
+          for="second-hand"
+          >Second Hand</label
+        ><br />
+        <input type="radio" id="refurbished" name="product-freshness" /><label
+          for="refurbished"
+          >Refurbished</label
+        ><br /><br />
+      </div>
+      <div>
+        <form
+          action="proses_upload.php"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <label for="product-image">Image of Product :</label>
+          <input
+            type="file"
+            id="product-image"
+            name="product-image"
+            accept="image/*"
+            required
+          /><br /><br />
+        </form>
+      </div>
+      <div>
+        <label for="additional-description">Additional Description:</label
+        ><br />
+        <textarea
+          name="additional-description"
+          id="additional-description"
+          cols="40"
+          rows="8"
+        ></textarea
+        ><br /><br />
+      </div>
+      <div>
+        <label for="product-price">Product Price :</label><br />
+        <input type="number" id="product-price" required /><br /><br />
+      </div>
+    </section>
+
+    <section class="submit-button">
+      <div>
+        <button type="submit">
+          <a href="landingPage.html" style="text-decoration: none"
+            >Submit</a
+          ></button
+        ><br />
+      </div>
+    </section>
+  </body>
+</html>
