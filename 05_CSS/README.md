@@ -56,3 +56,19 @@ membuat ruang disekitar elemen .content { margin: t r b l; padding: t r b l; }
 - border (menambahkan border)
 - border-collapse (membuat single border)
 - :nth-child(even) (membuat background stripe)
+
+### Flexbox
+
+Flexbox adalah model tata letak dalam CSS yang dirancang untuk mengatur tata letak elemen-elemen HTML dalam kontainer dengan cara yang lebih mudah dan responsif.
+
+### Properti Flexbox
+
+Properti Flex: Ada beberapa properti CSS yang digunakan dalam Flexbox, antara lain:
+
+- flex-direction: Mengatur arah utama tata letak flex (misalnya, row atau column).
+- justify-content: Mengatur cara elemen-elemen disusun sepanjang main axis.
+- align-items: Mengatur cara elemen-elemen disusun sepanjang cross axis.
+- flex-grow: Mengatur seberapa besar elemen dapat tumbuh sepanjang main axis.
+- flex-shrink: Mengatur seberapa besar elemen dapat menyusut sepanjang main axis.
+- flex-basis: Mengatur ukuran awal elemen sebelum tata letak flex.
+- align-self: Mengatur tata letak elemen secara individu dalam kontainer flex.

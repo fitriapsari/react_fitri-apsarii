@@ -4,21 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="style copy.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
   </head>
 
   <body>
-    <header class="nav-menu">
-      <h6>Simple Header</h6>
-      <ul class="nav-menu">
-        <li><a href="/home">Home</a></li>
-        <li><a href="/fetures" class="nav-menu">Features</a></li>
-        <li><a href="/pricing" class="nav-menu">Pricing</a></li>
-        <li><a href="/FAQs" class="nav-menu">FAQs</a></li>
-        <li><a href="/about" class="nav-menu">About</a></li>
-      </ul>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid text-end">
+        <span class="navbar-brand">Simple Navbar</span>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNavDropdown"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <hr />
-    </header>
+    </nav>
 
     <main class="utama">
       <section class="awal">
@@ -37,6 +71,7 @@
           <a href="#"><button class="rounded-button">Get Started</button></a>
           <a href="#"><button class="rounded-button">Watch Video</button></a>
         </div>
+
         <img src="hero-img.png.png" alt="Hero Image" id="hero-img" />
       </section>
 

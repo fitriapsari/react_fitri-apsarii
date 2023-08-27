@@ -17,3 +17,17 @@
 - Memiliki tampilan yang mirip satu sama lain antar website Bootstrap
 - Perlunya pembelajaran ulang untuk mengetahui class Bootstrap agar dapat digunakan
 - Memperlambat performance website jika tanpa optimasi yang baik akibat load time
+
+### Grid
+
+CSS Grid Layout adalah sistem tata letak dua dimensi dalam CSS yang memungkinkan untuk mengatur elemen-elemen HTML dalam bentuk grid (kotak) yang terdiri dari baris dan kolom.
+
+### Properti Grid
+
+Ada berbagai properti CSS yang digunakan dalam CSS Grid, yaitu:
+
+- grid-template-rows dan grid-template-columns: Mengatur ukuran dan jumlah baris dan kolom.
+- grid-gap atau grid-row-gap dan grid-column-gap: Menentukan jarak antara baris dan kolom.
+- grid-template-areas: Menentukan layout dengan menyebutkan nama area-grid.
+- grid-row dan grid-column: Mengatur posisi elemen dalam grid.
+- justify-items dan align-items: Mengatur posisi elemen dalam sel grid.
