@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,100&family=Open+Sans:wght@400;500&display=swap");
 
+/* .body { */
+/* font-family: "Jost" sans-serif; */
+/* } */
 .nav-menu {
   background-color: #ffff;
   width: 100%;
@@ -23,17 +26,26 @@
 }
 
 .rounded-button {
-  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 300px;
+  margin-left: 0px;
+  border: 0px;
+  padding-top: 50px;
+  background-color: #47b2e4;
   color: white;
   border-radius: 40px;
-
-  padding: 10px 20px;
+  padding: 10px 30px;
   border: none;
   cursor: pointer;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
 }
-
+/* .button.rounded-button { */
+/* margin-left: 50px; */
+/* } */
 .rounded-button:hover {
   background-color: darkblue;
 }
@@ -52,6 +64,7 @@
   margin-top: 100px;
   margin-right: 0px;
   margin-left: 60px;
+  margin-bottom: 100px;
 }
 
 h1 {
@@ -66,35 +79,65 @@ h1 {
   flex-direction: row;
   width: 100%;
   margin-top: 10px;
-  height: 500px;
+  height: 400px;
+}
+.container-sb {
+  padding: 20px;
+  justify-content: center;
+}
+
+input[type="text"],
+input[type="submit"] {
+  width: 50%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  background-color: #47b2e4;
+  color: white;
+  border: none;
+  border-radius: 30px 30px 30px 30px;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.8;
 }
 #join {
   background-color: #f3f5fa;
+  display: flex;
   text-align: center;
   flex-direction: column;
   padding: 50px;
   margin: 0px;
   border-radius: 30px;
 }
-
-.get {
+.container.container-sb {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20px;
-  padding-top: 24px;
+  flex-direction: row;
 }
-#lorem-ipsum {
-  border-radius: 30px 30px 30px 30px;
-}
-.biru {
-  background-color: #47b2e4;
-  border-radius: 30px;
-}
+/*  */
+/* .get { */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
+/* height: 20px; */
+/* padding-top: 24px; */
+/* } */
+/* #lorem-ipsum { */
+/* border-radius: 30px 30px 30px 30px; */
+/* } */
+/* .biru { */
+/* background-color: #47b2e4; */
+/* border-radius: 30px; */
+/* } */
 h2 {
   color: #37517e;
   text-align: center;
-  font-family: Jost;
+  font-family: "Jost";
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
@@ -109,6 +152,7 @@ h2 {
 .row {
   display: flex;
   flex-wrap: wrap;
+  font-family: sans-serif;
 }
 ul {
   list-style: none;
