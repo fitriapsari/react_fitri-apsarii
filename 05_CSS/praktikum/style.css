@@ -15,34 +15,72 @@
   gap: 1rem;
 }
 .sip {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  margin: 30px 0;
   gap: 2rem;
-  margin-top: 300px;
-  margin-left: 0px;
-  border: 0px;
-  padding-top: 50px;
+}
+
+.sip a {
+  width: 100%;
 }
 
 .rounded-button {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 2rem;
-  margin-top: 300px;
-  margin-left: 0px;
-  border: 0px;
-  padding-top: 50px;
-  background-color: #47b2e4;
+  background: none;
   color: white;
   border-radius: 40px;
-  padding: 10px 30px;
+  padding: 15px 20px;
   border: none;
   cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color;
 }
+
+.rounded-button.active {
+  background: #279eff;
+}
+
+.rounded-button.watch:hover {
+  background: #279eff;
+}
+
+.rounded-button.watch:hover::before {
+  content: "\27A4";
+  padding-right: 5px;
+  transition: all ease-in-out 0.3s;
+}
+
+.rounded-button:hover {
+  background-color: darkblue;
+}
+
+/* .sip { */
+/* display: flex; */
+/* flex-direction: row; */
+/* justify-content: space-between; */
+/* gap: 2rem; */
+/* margin-top: 300px; */
+/* margin-left: 0px; */
+/* border: 0px; */
+/* padding-top: 50px; */
+/* } */
+/*  */
+/* .rounded-button { */
+/* display: flex; */
+/* flex-direction: row; */
+/* justify-content: space-between; */
+/* gap: 2rem; */
+/* margin-top: 300px; */
+/* margin-left: 0px; */
+/* border: 0px; */
+/* padding-top: 50px; */
+/* background-color: #47b2e4; */
+/* color: white; */
+/* border-radius: 40px; */
+/* padding: 10px 30px; */
+/* border: none; */
+/* cursor: pointer; */
+/* text-decoration: none; */
+/* transition: background-color 0.3s, color 0.3s; */
+/* } */
 /* .button.rounded-button { */
 /* margin-left: 50px; */
 /* } */
@@ -59,6 +97,7 @@
   justify-content: flex;
   color: #ffff;
   padding: 20px;
+  height: 450px;
 }
 .text-container {
   margin-top: 100px;
@@ -77,35 +116,35 @@ h1 {
 #hero-img {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 60%;
   margin-top: 10px;
   height: 400px;
 }
-.container-sb {
-  padding: 20px;
-  justify-content: center;
-}
-
-input[type="text"],
-input[type="submit"] {
-  width: 50%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
-
-input[type="submit"] {
-  background-color: #47b2e4;
-  color: white;
-  border: none;
-  border-radius: 30px 30px 30px 30px;
-}
-
-input[type="submit"]:hover {
-  opacity: 0.8;
-}
+/* .container-sb { */
+/* padding: 20px; */
+/* justify-content: center; */
+/* } */
+/*  */
+/* input[type="text"], */
+/* input[type="submit"] { */
+/* width: 50%; */
+/* padding: 12px; */
+/* margin: 8px 0; */
+/* display: inline-block; */
+/* border: 1px solid #ccc; */
+/* box-sizing: border-box; */
+/* } */
+/*  */
+/* input[type="submit"] { */
+/* background-color: #47b2e4; */
+/* color: white; */
+/* border: none; */
+/* border-radius: 30px 30px 30px 30px; */
+/* } */
+/*  */
+/* input[type="submit"]:hover { */
+/* opacity: 0.8; */
+/* } */
 #join {
   background-color: #f3f5fa;
   display: flex;
@@ -115,10 +154,94 @@ input[type="submit"]:hover {
   margin: 0px;
   border-radius: 30px;
 }
-.container.container-sb {
+
+.masuk {
+  background-color: #f3f5fa;
+  top: 75px;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
+
+.content {
+  width: 360px;
+  height: 40px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 60px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.subscription {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.subscription .add-email {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding: 0 20px;
+}
+
+.subscription .submit-email {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: calc(100% - 2px);
+  width: 100px;
+  border: none;
+  border-radius: 60px;
+  outline: none;
+  margin: 1px;
+  padding: 0 20px;
+  cursor: pointer;
+  background: #47b2e4;
+  color: #ffffff;
+  transition: width 0.35s ease-in-out, background 0.35s ease-in-out;
+}
+
+.subscription.done .submit-email {
+  width: calc(100% - 2px);
+  background: #c0e02e;
+}
+
+.subscription .submit-email .before-submit,
+.subscription .submit-email .after-submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 38px;
+  transition: visibility 0.35s ease-in-out, opacity 0.35s ease-in-out;
+}
+
+.subscription.done .submit-email .before-submit,
+.subscription:not(.done) .submit-email .after-submit {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.subscription .submit-email .after-submit {
+  transition-delay: 0.35s;
+}
+
+.subscription:not(.done) .submit-email .before-submit,
+.subscription.done .submit-email .after-submit {
+  visibility: visible;
+  opacity: 1;
+}
+
 /*  */
 /* .get { */
 /* display: flex; */
@@ -160,7 +283,7 @@ ul {
 .footer {
   background-color: #ffff;
   padding: 70px 0;
-  margin-left: 50px;
+  margin-left: 70px;
   margin-right: 50px;
 }
 .footer-col {
@@ -238,6 +361,13 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.footer-copy .teks {
+  margin-left: 70px;
+}
+.footer-copy .teks-kanan {
+  margin-right: 50px;
+}
+
 .fixed-footer {
   bottom: 0;
 }
