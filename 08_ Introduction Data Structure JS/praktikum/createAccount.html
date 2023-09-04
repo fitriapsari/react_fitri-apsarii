@@ -7,7 +7,8 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
     />
-    <title>Create Product</title>
+    <script src="script2.js"></script> 
+    <title>Create Account</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -74,17 +75,17 @@
 <div class="row mt-5">
   <div class="col-3"></div>
   <div class="col-6">
-    <form action="" method="GET" class="container">
-      <h4>Detail Product</h4>
+    <form action="" method="post" class="container">
+      <h4>Detail Account</h4>
       <div class="col-md-6">
             <div class="form-group first">
                 <label for="fname">First Name</label>
-                <input type="text" class="form-control" placeholder="e.g. John" id="fname">
+                <input type="text" class="form-control" id="fname">
             </div>
             <div class="col-md-6">
                 <div class="form-group first">
-                    <label for="fname">Last Name</label>
-                    <input type="text" class="form-control" placeholder="e.g. John" id="fname">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname">
                 </div>
             </div>
             <div>
@@ -92,54 +93,54 @@
             </div>
             <div class="input-group mb-3">
                 <span class="input-group-text" id="basic-addon1">@</span>
-                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="username">
               </div>
               <div class="mb-3">
                     <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="you@gmail.com">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="you@gmail.com">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
               </div>
               <div> <h6>Gender</h6></div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="gender">
                 <label class="form-check-label" for="flexRadioDefault1">
                   Male
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="gender" checked>
                 <label class="form-check-label" for="flexRadioDefault2">
                   Female 
                 </label>
               </div>
               <div class="form-check">
-                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="gender" checked>
                 <label class="form-check-label" for="flexRadioDefault1">
                   Other 
                 </label>
             
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="1234 Main St">
+                <input type="text" class="form-control" id="address1" placeholder="1234 Main St">
               </div>
               <div class="mb-3">
                 <label for="exampleFormControlInput1" class="form-label">Address 2 (Optional) </label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Apartement of Suite">
+                <input type="text" class="form-control" id="address2" placeholder="Apartement of Suite">
               </div>
               <div class="mb-3">
-                <label for="product-category" class="form-label"
+                <label for="nasionallity" class="form-label"
                   >Nationaly :</label
                 ><br />
                 <select
                   class="form-select"
-                  id="product-category"
-                  name="product-category"
+                  id="nasionallity"
+                  name="nasionallity"
                   style="width: 50%"
                   required
                 >
                   <option value="Blank">Choose...</option>
-                  <option value="Baju">Indonesia</option>
-                  <option value="Celana">Malaysia</option>
+                  <option value="Indonesia">Indonesia</option>
+                  <option value="Malaysia">Malaysia</option>
                 </select>
               </div>
             </div>
@@ -147,30 +148,30 @@
     <hr class="ml-12"> 
     <div> <h6> Language Spoken</h6></div>
     <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <input class="form-check-input" type="checkbox" value="Bahasa" id="language">
         <label class="form-check-label" for="flexCheckDefault">
           Bahasa 
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <input class="form-check-input" type="checkbox" value="English" id="language" checked>
         <label class="form-check-label" for="flexCheckChecked">
           English
         </label>
       </div>
       <div class="form-check">
-        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <input class="form-check-input" type="checkbox" value="Indonesia" id="language">
         <label class="form-check-label" for="flexCheckDefault">
-          Spoken
+          Indonesia
         </label>
       </div>
       <br> 
       <div class="mt-5 mb-3">
-        <a
-          href="landingPage.html"
+        <button 
+          id="create-account-button"
           class="btn btn-primary"
           style="text-decoration: none; color: white; width: 100%"
-          >Create Account</a
+          >Create Account</button 
         >
       </div>
     </form>
@@ -181,7 +182,6 @@
 <div class="col-7 row mt-2"> <h4> List Account </h4></div>
     <table class="table table-striped col-8">
         <thead>
-          <tr>
             <!-- <th scope="col">No</th> -->
             <th scope="col">First Name  </th>
             <th scope="col">Last Name </th>
@@ -192,58 +192,11 @@
             <th scope="col">Address 2</th>
             <th scope="col">Nationally</th>
             <th scope="col">Language</th>
-          </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-          </tr>
-            <tr>
-              <th scope="row">4</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">5</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">6</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-            <tr>
-                <th scope="row">7</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
-            <tr>
-                <th scope="row">8</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-            </tr>
-            <tr>
-                  <th scope="row">9</th>
-                  <td colspan="2">Larry the Bird</td>
-                  <td>@twitter</td>
-            </tr>
           </tbody>
       </table>
+      <button  class=" row mt-5 mb-3" id="btnSearch">Search</button>
+
+      <button  id="btnDelete">Delete</button>
 </html>
