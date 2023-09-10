@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
   createAccountForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
+    // Mendapatkan nilai atau input dari berbagai elemen formulir
     const firstName = document.getElementById("fname").value;
     const lastName = document.getElementById("lname").value;
     const username = document.getElementById("username").value;
@@ -18,14 +19,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const table = document.querySelector("table tbody");
 
+    // Membuat array seluruh data dari formulir
     const newRow = table.insertRow();
     const cells = [firstName, lastName, username, email, gender, address, address2, nationality, selectedLanguages];
 
+    // Masukkan data ke dalam sel-sel baru
     cells.forEach((value, index) => {
       const cell = newRow.insertCell(index);
       cell.textContent = value;
     });
 
+    // Menjalankan fungsi tombol search dan delete 
     cells.forEach((value, index) => {
       const cell = newRow.insertCell(index);
       cell.textContent = value;
