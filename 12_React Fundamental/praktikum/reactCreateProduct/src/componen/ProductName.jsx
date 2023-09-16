@@ -1,6 +1,8 @@
+import "../css/productname.css"
+
 function ProductName() {
   return (
-    <div className="mb-3">
+    <div className="mb-6">
       <label htmlFor="validationTextarea" className="form-label">
         Product Name :
       </label>
