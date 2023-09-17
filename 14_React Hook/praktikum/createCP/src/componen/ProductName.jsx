@@ -33,7 +33,7 @@ function ProductName() {
           name="productName"
           style={{ width: "50%" }}
           value={productName}
-          onChange={handleChange}
+          onChange={(e) => setProductName(e.target.value)}
           required
         />
         <div className="invalid-feedback" id="productNameValidation">

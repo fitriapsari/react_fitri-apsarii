@@ -9,7 +9,6 @@ function DetailProduct() {
             name="formPendaftaran"
             id="formPendaftaran"
             method="post"
-            // onsubmit="submitForm(event)"
             className="needs-validation"
             noValidate=""
           >

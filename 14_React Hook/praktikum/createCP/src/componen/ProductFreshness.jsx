@@ -1,6 +1,6 @@
 function ProductFreshness() {
   return (
-    <div className="mb-3">
+    <div className="mb-3" onChange={(e) => setProductFreshness(e.target.value)}>
       <label className="form-label">Product Freshness :</label>
       <br />
       <div className="form-check">

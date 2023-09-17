@@ -1,6 +1,6 @@
 function ProductPrice() {
   return (
-    <div className="mb-3">
+    <div className="mb-3" onChange={(e) => setProductPrice(e.target.value)}>
       <label htmlFor="productPrice" className="form-label">
         Product Price :
       </label>

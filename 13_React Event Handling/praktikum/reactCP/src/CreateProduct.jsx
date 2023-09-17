@@ -12,7 +12,6 @@ import Logo from "./componen/logo"
 import Submit from "./componen/submit"
 import TextCenter from "./componen/textCenter"
 import "./index.css"
-// import textCenter from "./componen/textCenter"
 
 function CreateProduct() {
   return (
