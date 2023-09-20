@@ -1,0 +1,129 @@
+h2 {
+  color: #37517e;
+  text-align: center;
+  font-family: "Jost";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 100% */
+  padding-bottom: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #ffff;
+  padding: 70px 0;
+  margin-left: 70px;
+  margin-right: 50px;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  color: #5e5e5e;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #37517e;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #37517e;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-family: "jost";
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #5e5e5e;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #37517e;
+  padding-left: 8px;
+}
+
+.footer-col .social-media a {
+  display: inline-block;
+  font-family: Jost;
+  height: 40px;
+  width: 40px;
+  background-color: #47b2e4;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  margin: 0 10px 10px 0;
+  transition: all 0.5s ease;
+}
+
+.footer-col .social-media a:hover {
+  color: #47b2e4;
+  background-color: #fff;
+}
+
+.footer-copy {
+  width: 100%;
+  font-size: 12px;
+  position: relative;
+  background: #37517e;
+  margin: 0 10px 10px 0;
+  padding: 10px 0;
+  color: #ffff;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-copy .teks {
+  margin-left: 70px;
+}
+
+.footer-copy .teks-kanan {
+  margin-right: 50px;
+}
+
+.fixed-footer {
+  bottom: 0;
+}

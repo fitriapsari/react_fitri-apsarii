@@ -33,6 +33,7 @@ function Input() {
     setProducts([...products, product])
 
     // Mengosongkan formulir setelah submit
+    setProductNumber("")
     setProductName("")
     setProductCategory("")
     setProductFreshness("")
