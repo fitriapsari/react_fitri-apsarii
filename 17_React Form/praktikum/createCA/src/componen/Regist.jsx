@@ -33,7 +33,6 @@ const RegistrationForm = () => {
         .required("Please fill in all required fields."),
     }),
     onSubmit: (values) => {
-      // Handle form submission
       console.log(values)
     },
   })
