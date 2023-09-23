@@ -1,12 +1,55 @@
-import styles from "./Footer.module.css"
+import "./landingPage.css"
 
-function Footer() {
+function landingPage() {
   return (
     <>
-      <footer className={styles.footer}>
+      <main className="utama">
+        <section className="awal">
+          <div className="text-container">
+            <h1>Better Solutions For Your</h1>
+            <h1>Business</h1>
+            <br />
+            <p className="we-are">
+              We are a team of talented designers creating websites with
+              Bootstrap.
+            </p>
+            <br />
+            <div className="sip">
+              <a href="#">
+                <button className="rounded-button active">Get Started</button>
+              </a>
+              <a href="#">
+                <button className="rounded-button watch">Watch Video</button>
+              </a>
+            </div>
+          </div>
+          <img src="hero-img.png.png" alt="Hero Image" id="hero-img" />
+        </section>
+        <section id="join">
+          <h2>Join Our Newsletter</h2>
+          <label htmlFor="lorem-ipsum">
+            Tamen quem nulla quae legam multos aute sint culpa legam nostermagna
+          </label>
+          <br />
+          <div className="masuk">
+            <div className="content">
+              <form className="subscription">
+                <input className="add-email" type="email" />
+                <button className="submit-email" type="button">
+                  <span className="before-submit">Subscribe</span>
+                  <span className="after-submit">
+                    Thank you for subscribing!
+                  </span>
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer className="footer">
         <div className="container">
           <div className="row">
-            <div className={styles["footer-col"]}>
+            <div className="footer-col">
               <h4>
                 <b>ARSHA</b>
               </h4>
@@ -34,7 +77,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className={styles["footer-col"]}>
+            <div className="footer-col">
               <h4>Useful Links</h4>
               <ul>
                 <li>
@@ -54,7 +97,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className={styles["footer-col"]}>
+            <div className="footer-col">
               <h4>Our Service</h4>
               <ul>
                 <li>
@@ -74,13 +117,13 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div className={styles["footer-col"]}>
+            <div className="footer-col">
               <h4>Our Social Networks</h4>
               <p>
                 Cras fermentum odio eu feugiat lide par naso tierra videa magna
                 derita valies
               </p>
-              <div className={styles["social-media"]}>
+              <div className="social-media">
                 <a href="#">
                   <i className="fab fa-facebook" />
                 </a>
@@ -98,19 +141,14 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <div className={styles["fixed-footer"]}>
+      <div className="fixed-footer">
         <div className="container footer-copy">
-          <p className={styles.teks}>
+          <p className="teks">
             © Copyright <b>Arsha.</b> All Rights Reserved
           </p>
-          <p className={styles["teks-kanan"]}>
-            Designed by{" "}
-            <span className={styles.bootstrapMade}>BootstrapMade</span>
-          </p>
+          <p className="teks-kanan">Designed by BootstrapMade</p>
         </div>
       </div>
     </>
   )
 }
-
-export default Footer

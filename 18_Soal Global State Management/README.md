@@ -1,4 +1,4 @@
-# Resume Global State Management and Data Fetching
+# Resume Global State Management
 
 ### Global State Management
 

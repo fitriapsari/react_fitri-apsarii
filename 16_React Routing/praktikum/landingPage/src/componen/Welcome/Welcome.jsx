@@ -1,28 +1,38 @@
 import React from "react"
-import "./Welcome.module.css"
-// import Logo from "../assets/hero-img.png.png" // Adjust the path as needed
+import { Link } from "react-router-dom"
+import styles from "./Welcome.module.css"
+import heroImage from "../../assets/heroImg.png"
 
 function Welcome() {
   return (
-    <section className="awal">
-      <div className="text-container">
-        <h1>Better Solutions For Your</h1>
-        <h1>Business</h1>
-        <br />
-        <p className="we-are">
-          We are a team of talented designers creating websites with Bootstrap.
-        </p>
-        <br />
-        <div className="sip">
-          <a href="#">
-            <button className="rounded-button active">Get Started</button>
-          </a>
-          <a href="#">
-            <button className="rounded-button watch">Watch Video</button>
-          </a>
+    <section className={styles.awal}>
+      <div className={styles.textContainer}>
+        <div>
+          <h1>Better Solutions For Your</h1>
+          <h1>Business</h1>
+          <br />
+          <p className={styles.weAre}>
+            We are a team of talented designers creating websites with
+            Bootstrap.
+          </p>
+          <br />
+          <div className={styles.sip}>
+            <Link to="/create">
+              <button className={`${styles.roundedButton} ${styles.active}`}>
+                Get Started
+              </button>
+            </Link>
+            <a href="#">
+              <button className={`${styles.roundedButton} ${styles.watch}`}>
+                Watch Video
+              </button>
+            </a>
+          </div>
         </div>
       </div>
-      {/* <img src={Logo} alt="Hero Image" id="hero-img" /> */}
+      <div className={styles.imageContainer}>
+        <img src={heroImage} alt="Hero" className={styles.Img} />
+      </div>
     </section>
   )
 }

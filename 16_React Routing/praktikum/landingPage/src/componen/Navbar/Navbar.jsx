@@ -1,3 +1,5 @@
+import syles from "./Navbar.module.css"
+
 function Navbar() {
   return (
     <header className="nav-menu">

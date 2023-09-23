@@ -1,4 +1,4 @@
-import "./Newsletter.module.css"
+// import styles from "./Newsletter.module.css"
 
 function Newsletter() {
   return (
@@ -22,4 +22,5 @@ function Newsletter() {
     </section>
   )
 }
+
 export default Newsletter

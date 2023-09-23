@@ -1,3 +1,27 @@
+/* .awal {
+  display: flex;
+  flex-direction: column;
+  background-color: #37517e;
+  width: 100%;
+  font-family: "Jost";
+  justify-content: flex;
+  color: #ffff;
+  padding: 20px;
+  height: 450px;
+} */
+
+.awal {
+  display: flex;
+  background-color: #37517e;
+  width: 100%;
+  font-family: "Jost";
+  justify-content: flex-start;
+  /* Menggeser konten ke kiri */
+  color: #ffff;
+  padding: 20px;
+  height: 450px;
+}
+
 .sip {
   margin: 30px 0;
   gap: 2rem;
@@ -40,24 +64,28 @@
   background-color: darkblue;
 }
 
-.awal {
+/* .text-container {
   display: flex;
-  flex-direction: row;
-  background-color: #37517e;
-  width: 100%;
-  font-family: "Jost";
-  justify-content: flex;
-  color: #ffff;
-  padding: 20px;
-  height: 450px;
-}
+  flex-direction: column;
+  /* Membuat elemen dalam .text-container menata secara vertikal (teks di atas teks) */
+/* flex: 1; */
+/* Bagian kiri akan memanfaatkan seluruh ruang yang tersisa */
 
-.text-container {
+
+/* .Img {
+  width: 300px; */
+/* Lebar gambar */
+
+
+
+/* .text-container {
+  display: flex;
+  flex-direction: column;
   margin-top: 100px;
   margin-right: 0px;
   margin-left: 60px;
   margin-bottom: 100px;
-}
+} */
 
 h1 {
   font-size: 28px;
@@ -67,10 +95,24 @@ h1 {
   font-size: 20px;
 }
 
-#hero-img {
-  display: flex;
-  flex-direction: row;
+/* .Img {
   width: 60%;
   margin-top: 10px;
-  height: 400px;
+  height: 300px;
+} */
+
+.textContainer {
+  flex: 1;
+  margin-top: 70px;
+  /* Bagian kiri akan memanfaatkan seluruh ruang yang tersisa */
+}
+
+.imageContainer {
+  display: flex;
+  align-items: center;
+  /* Pusatkan gambar secara vertikal */
+}
+
+.Img {
+  width: 400px;
 }
