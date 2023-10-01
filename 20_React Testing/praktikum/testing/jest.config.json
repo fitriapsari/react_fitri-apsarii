@@ -1,0 +1,18 @@
+{
+  "testEnvironment": "jest-environment-jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs)$": "<rootDir>/node_modules/babel-jest"
+  },
+  "moduleNameMapper": {
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "jsx",
+    "node"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/tests/setup.js"
+  ]
+}
