@@ -2,10 +2,12 @@ import React, { useState } from "react"
 import { v4 as uuidv4 } from "uuid"
 import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
+import { MyInitialState } from "../redux/slice/productSlice"
 
 function ListProduct() {
   // const [products, setProducts] = useState([])
-  const products = useSelector((state) => state.products.products)
+  const products = useSelector((state) => state.MyInitialState)
+  console.log(products)
   const dispatch = useDispatch()
   const [formData, setFormData] = useState({
     productName: "",
@@ -98,7 +100,7 @@ function ListProduct() {
     }
 
     // Memperbarui daftar produk dengan produk baru
-    setProducts([...products, product])
+    // setProducts([...products, product])
 
     // Mengirim aksi untuk menambahkan produk ke Redux
     dispatch(addProduct(product))
