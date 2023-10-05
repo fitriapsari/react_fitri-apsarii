@@ -6,7 +6,7 @@ function Footer() {
       <section className="footer-container">
         <div className="footer-contents">
           <div className="content">
-            <h1 className="footer-title">RealCinema</h1>
+            <h1 className="footer-title">realCinema</h1>
             <p className="isiRealCinema">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet
               eaque harum cum ea blanditiis ex molestias officiis

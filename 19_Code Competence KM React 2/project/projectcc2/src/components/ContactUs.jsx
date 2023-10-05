@@ -8,7 +8,7 @@ const dataForm = {
   message: "",
 }
 
-const ContactUs = () => {
+function ContactUs() {
   const [data, setData] = useState(dataForm)
 
   const handleChange = (e) => {

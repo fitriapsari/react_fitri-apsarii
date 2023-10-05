@@ -1,6 +1,6 @@
 import React from "react"
 
-const Welcome = () => {
+function Welcome() {
   return (
     <div>
       <div className="position-relative overflow-hidden home p-3 p-md-5 text-center">
