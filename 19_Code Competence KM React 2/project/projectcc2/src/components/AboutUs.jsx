@@ -8,7 +8,10 @@ function AboutUs() {
         <div className="col-md-7 p-lg-5 mx-auto my-5">
           <h1 className="display-4 fw-normal text-light fw-bold">About Us</h1>
           <img src={imgAbout} alt="imgAbout" className="w-100 my-5" />
-          <p className="lead fw-normal text-light">
+          <p
+            className="lead fw-normal text-light"
+            style={{ textAlign: "justify" }}
+          >
             We're all about bringing you great entertainment. No matter where
             you are or what you love, we've got a wide range of awesome TV
             shows, documentaries, movies, and mobile games just for you. You're

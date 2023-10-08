@@ -32,7 +32,7 @@ function Welcome() {
       <div className={styles.imageContainer}>
         <img src={heroImage} alt="Hero" className={styles.Img} />
       </div>
-    </section>
+    </section> 
   )
 }
 
