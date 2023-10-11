@@ -26,42 +26,53 @@
 1. Membuat react project
    <br/>
 
-   ```yarn create vite'''
-
+   ```
+   yarn create vite
    ```
 
 2. Install package OpenAI
    <br/>
 
-   ```npm install openai@^4.0.0'''
+   ```
+   npm install openai@^4.0.0
 
    ```
 
 3. Import module yang dperlukan
    <br/>
-   ```import { useState } from "react";
-   import { Configuration, OpenAIApi } from "openai"; '''
+
    ```
+
+   import { useState } from "react";
+   import { Configuration, OpenAIApi } from "openai";
+
+   ```
+
 4. Deklarassi Object
    <br/>
 
-```const configuration = new Configuration({
+```
+    const configuration = new Configuration({
     apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
+
 ```
 
 5. Deklarasi State
 
-```const configuration = new Configuration({
+```
+  const configuration = new Configuration({
     apiKey: "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",
   });
   const openai = new OpenAIApi(configuration);
+
 ```
 
 6. Deklarasi handleclick
 
-```const handleClick = async () => {
+```
+    const handleClick = async () => {
     setLoading(true);
     try {
       const response = await openai.createCompletion({
@@ -77,6 +88,7 @@
     }
     setLoading(false);
   };
+
 ```
 
 7. Rendering Komponen

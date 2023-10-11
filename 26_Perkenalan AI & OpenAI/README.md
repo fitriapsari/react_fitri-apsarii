@@ -12,7 +12,9 @@ AI membuat prediksi atau keputusan dengan menggunakan data.
 
 ### Struktur AI
 
--
+- AI = Ability of machine to imitate intelligent human behavior
+- ML = Application of AI taht allows a system to automatcally learn and improve from experience
+- DL = Application of Machine Learning taht uses complex algorithems and deep naural nets to train a model.
 
 ### Sejarah AI
 
