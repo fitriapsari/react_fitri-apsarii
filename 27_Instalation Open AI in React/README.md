@@ -125,3 +125,33 @@
 4. Pilih letak API Keys dan create new secret key
 5. Ikuti petunjuk untuk mengkonfigurasi kunci API sesuai dengan kebutuhan
 6. Masukan API Keys ke dalam project React yang telah dibuat
+
+### Setting Open AI
+
+- `model:`
+  <br/>
+  model bahasa yang akan digunakan untuk menghasilkan teks. Contoh model yang populer adalah "gpt-3.5-turbo" dan "text-davinci-003".
+
+- `messages: `
+  <br/>
+  array yang berisi objek pesan. Setiap objek pesan memiliki dua properti: role (seperti "system", "user", atau "assistant") dan content yang berisi teks pesan.
+
+- `max_tokens:`
+  <br/>
+  opsi yang memungkinkan untuk membatasi jumlah token dalam respons. Membantu mengontrol panjang respons yang dihasilkan oleh model.
+
+- `temperature:`
+  <br/>
+  npm mengontrol sejauh mana model memilih opsi yang acak dalam responsnya. Nilai yang lebih tinggi seperti 0.8 akan menghasilkan respons yang lebih bervariasi, sedangkan nilai yang lebih rendah seperti 0.2 akan membuat respons lebih deterministik.
+
+- `stop:`
+  <br/>
+  Mengatur model untuk berhenti menghasilkan teks ketika token tertentu ditemukan. Ini sering digunakan untuk mengakhiri respons pada titik tertentu.
+
+- ` frequency_penalty:`
+  <br/>
+  Ini mengontrol sejauh mana model menghindari mengulangi kata atau frasa yang sering muncul dalam responsnya.
+
+- `presence_penalty:`
+  <br/>
+  Ini mengontrol sejauh mana model mencoba untuk menggunakan kata atau frasa yang telah disebutkan dalam pesan-pesan sebelumnya dalam percakapan.
