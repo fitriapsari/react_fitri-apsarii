@@ -18,18 +18,11 @@ const ChatAI = () => {
     e.preventDefault()
     setLoading(true)
     const res = await openai.chat.completions.create({
-      // messages: [
-      //   { role: "system", content: "You are a helpful assistant." },
-      //   { role: "user", content: command },
-      // ],
+      messages: [
+        { role: "system", content: "You are a helpful assistant." },
+        { role: "user", content: command },
+      ],
       model: "gpt-3.5-turbo",
-      prompt: "A summarizing article from this url :" + command,
-      model: "gpt-3.5-turbo",
-      max_tokens: 1000,
-      temperature: 0,
-      precence_penalty: 1,
-      frequency_penalty: 0.0,
-      top_p: 1.0,
     })
     setResult(res.choices[0].message.content)
     setLoading(false)
@@ -42,8 +35,8 @@ const ChatAI = () => {
         id="command"
         value={command}
         onChange={(e) => setCommand(e.target.value)}
-        placeholder="Masukkan perintah di sini"
-        className="input"
+        placeholder="Masukkan perintah"
+        className="input-add-article"
       />
 
       {loading && (

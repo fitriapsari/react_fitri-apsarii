@@ -22,16 +22,17 @@ const ChatAI = () => {
       //   { role: "system", content: "You are a helpful assistant." },
       //   { role: "user", content: command },
       // ],
-      model: "gpt-3.5-turbo",
+      // model: "gpt-3.5-turbo",
       prompt: "A summarizing article from this url :" + command,
       model: "gpt-3.5-turbo",
-      max_tokens: 1000,
+      max_tokens: 1250,
       temperature: 0,
-      precence_penalty: 1,
+      presence_penalty: 1,
       frequency_penalty: 0.0,
       top_p: 1.0,
     })
     setResult(res.choices[0].message.content)
+    console.log("result", res)
     setLoading(false)
   }
 
