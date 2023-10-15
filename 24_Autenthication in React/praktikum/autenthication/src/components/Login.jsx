@@ -22,8 +22,8 @@ function Login() {
     ) {
       // Autentikasi berhasil
       const { from } = location.state || { from: { pathname: "/landing-page" } }
-      window.localStorage.setItem("isLoggedIn", "true") // Simpan status login
-      window.location.pathname = from.pathname // Alihkan ke halaman yang diminta
+      window.localStorage.setItem("isLoggedIn", "true")
+      window.location.pathname = from.pathname
     } else {
       // Autentikasi gagal
       alert("Periksa kembali email dan password Anda.")
