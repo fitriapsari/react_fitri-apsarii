@@ -1,13 +1,10 @@
 import React, { useState } from "react"
-import { useLocation, Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
+import "../module.css/Login.module.css"
 
-function Login() {
-  const [formData, setFormData] = useState({
-    email: "",
-    password: "",
-  })
-
-  const location = useLocation()
+const Login = ({ setLoggedIn }) => {
+  const [formData, setFormData] = useState({ email: "", password: "" })
+  const navigate = useNavigate()
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -15,18 +12,15 @@ function Login() {
   }
 
   const handleLogin = () => {
-    // autentikasi
+    // Logika autentikasi
     if (
-      formData.email === "user@example.com" &&
-      formData.password === "password"
+      formData.email === "fitri@gmail.com" &&
+      formData.password === "fitri123"
     ) {
-      // Autentikasi berhasil
-      const { from } = location.state || { from: { pathname: "/landing-page" } }
-      window.localStorage.setItem("isLoggedIn", "true")
-      window.location.pathname = from.pathname
+      setLoggedIn(true)
+      navigate("/landing-page")
     } else {
-      // Autentikasi gagal
-      alert("Periksa kembali email dan password Anda.")
+      alert("Email atau password salah")
     }
   }
 

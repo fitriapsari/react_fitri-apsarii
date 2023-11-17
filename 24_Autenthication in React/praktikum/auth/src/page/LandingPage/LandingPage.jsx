@@ -1,6 +1,7 @@
-import "./landingPage.css"
+import "./LandingPage.style.css"
+import heroImage from "../../assets/heroImg.png"
 
-function landingPage() {
+function LandingPage() {
   return (
     <>
       <main className="utama">
@@ -23,7 +24,7 @@ function landingPage() {
               </a>
             </div>
           </div>
-          <img src="hero-img.png.png" alt="Hero Image" id="hero-img" />
+          <img src={heroImage} alt="Hero Image" id="hero-img" />
         </section>
         <section id="join">
           <h2>Join Our Newsletter</h2>
@@ -152,5 +153,4 @@ function landingPage() {
     </>
   )
 }
-
-export default landingPage
+export default LandingPage

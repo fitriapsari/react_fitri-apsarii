@@ -1,53 +1,39 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import "./App.css"
-import React from "react"
-import { useLocation, Link, Routes, Route, Navigate } from "react-router-dom"
+import React, { useState } from "react"
+import {
+  Routes,
+  Route,
+  BrowserRouter,
+  useNavigate,
+  Router,
+} from "react-router-dom"
 import Login from "../src/components/Login"
-import LandingPage from "../src/components/landingPage"
+import LandingPage from "../src/components/Login"
+import { Link } from "react-router-dom"
 
-function Home() {
-  return <h2>Home</h2>
-}
-
-function App() {
-  const location = useLocation()
-  const isLoggedIn = localStorage.getItem("isLoggedIn") === "true"
+const App = () => {
+  const [isLoggedIn, setLoggedIn] = useState(false)
+  const navigate = useNavigate()
 
   return (
-    <div>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Home</Link>
-          </li>
-          {!isLoggedIn && (
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
-          )}
-        </ul>
-      </nav>
+    // <LandingPage />
+    <BrowserRouter>
+      {/* <Routes>
+        <Route path="/login" element={<Login setLoggedIn={setLoggedIn} />} />
+        <Route path="/landing-page">
+          <LandingPage />
+        </Route>
+      </Routes> */}
+      <div>
+        <Link to="/login">Login</Link>
+        <Link to="/landing-page">Landing Page</Link>
 
-      <Routes>
-        <Route path="/login" element={<Login />} />
-        <Route
-          path="/landing-page"
-          element={
-            isLoggedIn ? (
-              <LandingPage />
-            ) : (
-              <Navigate
-                to={{ pathname: "/login", state: { from: location } }}
-                replace
-              />
-            )
-          }
-        />
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </div>
+        {isLoggedIn ? (
+          <LandingPage />
+        ) : (
+          <Link to="/login">Anda harus login terlebih dahulu</Link>
+        )}
+      </div>
+    </BrowserRouter>
   )
 }
 
